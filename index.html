@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <style>
+        body{
+            font-family:sans-serif, sans-serif;
+        }
+        .container{
+            width: 800px;
+            text-align: center;
+            margin: 50px auto;
+           
+        }
+        .box{
+            display: flex;
+            width: 600px;
+            height: 30px;
+            text-align: center;
+            margin: 50px auto;
+            border: 10px solid pink;
+            justify-content: space-around;
+            align-items: center;
+        }
+       .showMessage{
+        background-color: rgba(128, 128, 128, 0.338);
+        width: 80%;
+        height: 60vh;
+        top: 5%;
+        left: 10%;
+        position: fixed;
+        display: flex;
+        font-size: 100px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        color: pink;        font-style: italic;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      
+       }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas width="300" height="300"></canvas>
+        <div class="box">
+            <span class="score">Your Score:</span>
+            <span class="heightScore">Top Score:</span>
+        </div>
+        <div class="showMessage"><span>Game Over</span></div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
